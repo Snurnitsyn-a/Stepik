@@ -1,23 +1,20 @@
-L = input()
-L2 = [int(i) for i in L]
+L1 = input().split()
+L = [int(i) for i in L1]
+L.sort()
 
-'''count = 1 
+count = 1 
 
-for i in range(len(L)):
-    if i == len(L) - 1:
-        break
-    if L[i] == L[i + 1]:
+for i in range(1,len(L)):
+    if L[i] == L[i - 1]:
         count += 1
-        if count == len(L):
+        if i == len(L) - 1:
             print(L[i])
     else:
         if count > 1:
-            print(L[i], end = ' ')
+            print(L[i - 1], end = ' ')
         else:
             continue
         count = 1
-'''
-print(L2.sort())
 
         
     

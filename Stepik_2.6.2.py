@@ -7,7 +7,6 @@
 
 Например, если n = 7, то программа должна вывести 1 2 2 3 3 3 4.
 '''
-
 '''
 n = int(input())
 i = 0
@@ -31,3 +30,5 @@ while len(s) < n:
     i += 1
 result = ' '.join(str(x) for x in s)
 print(result)
+
+'new comment'
